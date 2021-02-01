@@ -13,7 +13,7 @@ moins fiables.
 * Proposer un candidat potentiel pour l’origine des données.
 
 ### Pour voir nos résultats détaillés vous pouvez soit :
-* Aller sur le lien du <a href="https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb">notebook sur nbviewer</a> pour visualiser le notebook en ligne
+* Aller sur le lien du <a href="https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True">notebook sur nbviewer</a> pour visualiser le notebook en ligne
 * Télécharger le fichier <a href="https://github.com/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.html">tp_Qualite_des_donnees.html</a> et l'ouvrir sur votre navigateur 
 * Télécharger le fichier <a href="https://github.com/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb">tp_Qualite_des_donnees.ipynb</a> et l'ouvrir sur un outil de notebook python comme Google Colab ou Jupyter
 
