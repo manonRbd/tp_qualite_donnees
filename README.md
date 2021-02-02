@@ -101,6 +101,7 @@ Dans la partie suivante nous vous présentons les résultats pour les 4 villes q
 | Oslo          |        0.23        |      6.84     |      121     | **134.69**|
 | Stockholm     |        22.99        |      3.85     |      940     | **947.70**|
 | Kiev          |       36.49         |     4.31  |  1069 | **1077.62**
+| Savukoski     |       51.69         |   12.98   | 1587 | **1613.77**
 
 ### Conclusion
 Au vu de ces résultats, il a été conclus que le fichier SI représente probablement les températures de la capitale de la Norvège c'est-à-dire Oslo.
