@@ -37,7 +37,7 @@ Au niveau des données utilisées pour comparer avec les capitales européennes 
 
 
 ### Fichier de données SI erreur
-Dans le jeu de données de SI erreur des données de type chaine de caractère ont été relevées. Afin de les corriger nous réalisons une moyenne avec 5 données antérieurs et postérieurses. Ensuite nous supposions que certaines données étaient erronées avec des valeur trop haute comme 45° au mois d'août. Afin de les corriger nous avons réalisés une moyenne avec les valeurs des données antérieur et postérieures.
+Dans le jeu de données de SI erreur des données de type chaine de caractère ont été relevées. Afin de les corriger nous réalisons une moyenne avec 5 données antérieurs et postérieurses. Ensuite nous supposions que certaines données étaient erronées avec des valeur trop haute comme 45° au mois d'août. Afin de les corriger nous avons réalisés une moyenne avec les valeurs des données antérieures et postérieures. Pour trouvées ces données éronnées, la mise en place d'un critère de recherche a été necessaire. Nous considérions que si la température du jour est supérieur à 15 de la température de la veille alors celle-ci est éronnée.
 
 | Mois      |      Moyenne    |  Ecart-type |   Température minimal    |  Température Maximal
 | --------------|-----------------|------------| ---------- | ---------- |
