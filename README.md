@@ -20,7 +20,7 @@ Au niveau des données utilisées pour comparer avec les capitales européennes 
 
 ### Fichier de données SI
 
-| Mois      |      Moyenne    |  Ecart-type |   Température minimal    |  Température Maximal
+| Mois      |      Moyenne    |  Ecart-type |   Température minimale    |  Température maximale
 | --------------|-----------------|------------| ---------- | ---------- |
 | Janvier  |        -8.967742       |      4.490611    |      **-23.0**     | -3.0 |
 | Février    |       -4.928571      |      4.561746    |     -12.0      | 5.0 |
@@ -39,7 +39,7 @@ Au niveau des données utilisées pour comparer avec les capitales européennes 
 ### Fichier de données SI erreur
 Dans le jeu de données de SI erreur des données de type chaine de caractère ont été relevées. Afin de les corriger nous réalisons une moyenne avec 5 données antérieurs et postérieurses. Ensuite nous supposions que certaines données étaient erronées avec des valeur trop haute comme 45° au mois d'août. Afin de les corriger nous avons réalisés une moyenne avec les valeurs des données antérieures et postérieures. Pour trouvées ces données éronnées, la mise en place d'un critère de recherche a été necessaire. Nous considérions que si la température du jour est supérieur à 15 de la température de la veille alors celle-ci est éronnée. Les donées corrigées sont proches des données du fichier SI. Le plus grande ecart de valeur est de 3 mais varie plus autour de 0,5 et 1,5.
 
-| Mois      |      Moyenne    |  Ecart-type |   Température minimal    |  Température Maximal
+| Mois      |      Moyenne    |  Ecart-type |   Température minimale    |  Température maximale
 | --------------|-----------------|------------| ---------- | ---------- |
 | Janvier  |        -8.967742       |      4.490611    |      **-23.0**     | -3.0 |
 | Février    |       -5.196429     |      4.225889    |     -12.0      | 3.0 |
@@ -63,8 +63,7 @@ Voici ensuite le graphe à l'année du fichier SI le graphe est retrouvable à c
 
 
 ### Comparaison avec la station Savukoski kirkonkyla
-Savukoski est une ville en Finlande d'où ont étées tirées des données de température au même format que nos fichiers SI et Si-Erreur précédents. Nous voulons comparer les deux courbes pour se rendre compte si elles sont proches. Voici le graphe de comparaison (retrouvable à cette [adresse]
-(https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Comparaison-des-donn%C3%A9es-%C3%A0-l'ann%C3%A9e-pour-le-fichier-SI-error-et-le-fichier-de-Savukoski-kirkonkyla)) :
+Savukoski est une ville en Finlande d'où ont étées tirées des données de température au même format que nos fichiers SI et Si-Erreur précédents. Nous voulons comparer les deux courbes pour se rendre compte si elles sont proches. Voici le graphe de comparaison (retrouvable à cette [adresse](https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Comparaison-des-donn%C3%A9es-%C3%A0-l'ann%C3%A9e-pour-le-fichier-SI-error-et-le-fichier-de-Savukoski-kirkonkyla)) :
 ![alt text](https://github.com/rbdManon/tp_qualite_donnees/blob/main/images/diagramme3.PNG?raw=true)
 
 Nous pouvons voir certaines différences notables entre les deux courbes notamment en début d'année vers le mois de mars ou les courbes s'éloignent significativement. Ce n'est probablement pas dans cette ville que les mesures de température du fichier SI ont étées réalisées.
@@ -73,8 +72,26 @@ Nous pouvons voir certaines différences notables entre les deux courbes notamme
 Comme savukoski n'est probablement pas la ville recherchée nous allons comparer les courbes de températures du fichier avec les relevés de températures de diverses autres capitales d'Europe, nous avons restreints notre choix aux métropoles nordiques car les températures peuvent atteindre la barre des -20 ce qui est assez rare dans le centre et le sud de l'europe. Nous avons donc choisis Oslo, Helsinki, Stockholm ainsi que Kiev.
 
 #### Comparaison avec Oslo
+Voici le graphe de comparaison avec Oslo (retrouvable à cette [adresse](https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Comparaison-avec-Oslo)) :
+![alt text](https://github.com/rbdManon/tp_qualite_donnees/blob/main/images/diagramme5.PNG?raw=true)
+
+#### Comparaison avec Stockholm
+Voici le graphe de comparaison avec Stockholm (retrouvable à cette [adresse](https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Comparaison-avec-Stockholm)) :
+![alt text](https://github.com/rbdManon/tp_qualite_donnees/blob/main/images/diagramme4.PNG?raw=true)
 
 
+#### Problème de la comparaison graphique
+Bien que ces comparaisons graphiques soient esthétiquement agréable à l'oeil, elles n'en restent pas moins compliquées à interpréter. En effet il est complexe d'analyser la différence entre ces deux courbes à l'oeil nu, il est donc nécessaire de réaliser des comparaisons mathématiques entre les deux courbes.
+
+### Comparaison numérique entre les températures des villes
+Pour comparer les données du fichier SI-Error et celles des capitales européennes nous avons réalisés une comparaison en 3 étapes :
+* Tout d'abord nous avons comparé la différence de moyenne de température mois par mois
+* Ensuite nous avons fait la même chose mais pour l'écart-type
+* Enfin nous avons calculé l'aire entre les deux courbes pour compléter notre calcul
+
+Nous additionnons ensuite ces 3 valeurs qui sont censés tendre vers 0 à mesure que les données se rapprochent du lieu exacte où a été réalisé les mesures du fichier SI-Error et nous obtenons un score global.
+
+Dans la partie suivante nous vous présentons les résultats pour les 4 villes que nous avons sélectionnés.
 
 ### Résultats
 
@@ -83,5 +100,7 @@ Comme savukoski n'est probablement pas la ville recherchée nous allons comparer
 | Helsinki      |        4.86        |      8.51     |      337     | **354.03**|
 | Oslo          |        0.23        |      6.84     |      121     | **134.69**|
 | Stockholm     |        22.99        |      3.85     |      940     | **947.70**|
+| Kiev          |       36.49         |     4.31  |  1069 | **1077.62**
 
-Au vu de ces résultats, il a été conclus que le fichier SI représente probablement les températures de la capitale de la Norvège c'est à dire Oslo. 
+### Conclusion
+Au vu de ces résultats, il a été conclu que le fichier SI représente probablement les températures de la capitale de la Norvège c'est à dire Oslo. 
