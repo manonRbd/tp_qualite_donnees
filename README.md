@@ -21,7 +21,7 @@ Au niveau des données utilisées pour comparer avec les capitales européennes 
 ### Résultats
 
 | Capitale      |     Moyenne     |  Ecar-type |  Aire      |  
-| ------------- |: -------------: | ---------: | ---------: |
+| ------------- |: -------------: | : -------: | ---------: |
 | Helsinki      |        1        |      1     |      1     |
 | Oslo          |        2        |      1     |      1     |
 | Stockholm     |        3        |      1     |      1     |
