@@ -17,6 +17,7 @@ moins fiables.
 * Télécharger le fichier <a href="https://github.com/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb">tp_Qualite_des_donnees.ipynb</a> et l'ouvrir sur un outil de notebook python comme Google Colab ou Jupyter
 
 Au niveau des données utilisées pour comparer avec les capitales européennes du nord, nous avons utilisés les données présentes sur ce lien : https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities et qu proviennent originellement de l'université de Dayton. Après extraction des températures nous obtenons le fichier temp_north_city.xlsx avec les températures annuelles d'Oslo, de Stockholm et de Helsinki pour l'année 2018.
+
 ### Fichier de données SI
 
 | Mois      |      Moyenne    |  Ecart-type |   Température minimal    |  Température Maximal
@@ -36,7 +37,7 @@ Au niveau des données utilisées pour comparer avec les capitales européennes 
 
 
 ### Fichier de données SI erreur
-Dans le jeu de données de SI erreur des données de type chaine de caractère ont été relevées. Afin de les corriger nous réalisons une moyenne avec 5 données antérieurs et postérieurs. Ensuite nous suposions que certaines données étaient érronées avec des valeurs trop haute. Afin de les corriger nous avons réaliser une moyenne avec les valeurs des données antérieur et postérieur. Le plus grand écart de valeur est de 3.
+Dans le jeu de données de SI erreur des données de type chaine de caractère. Afin de les corriger nous réalisons une moyenne avec 5 données antérieurs et postérieurses. Ensuite nous supposions que certaines données étaient erronées. Afin de les corriger nous avons réalisés une moyenne avec les valeurs des données antérieur et postérieures.
 
 | Mois      |      Moyenne    |  Ecart-type |   Température minimal    |  Température Maximal
 | --------------|-----------------|------------| ---------- | ---------- |
@@ -52,6 +53,12 @@ Dans le jeu de données de SI erreur des données de type chaine de caractère o
 | Octobre     |        3.802419       |     1.798661    |      1.0     | 7.0 |
 | Novembre     |       -0.333333        |     3.717000     |     -8.0     | 5.0 |
 | Décembre     |        -7.129032       |      1.927726     |    -11.0     | -3.0 |
+
+### Graphiques
+Ci-dessous le graphique des courbes mois par mois pour le fichier SI, le graphe est manipulable plus facilement à cette [adresse](https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Affichage-des-courbes-de-temp%C3%A9ratures-mensuelles)
+
+
+![alt text](https://github.com/rbdManon/tp_qualite_donnees/blob/main/images/diagramme1.PNG?raw=true)
 
 
 ### Résultats
