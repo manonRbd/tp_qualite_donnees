@@ -18,3 +18,10 @@ moins fiables.
 
 Au niveau des données utilisées pour comparer avec les capitales européennes du nord, nous avons utilisés les données présentes sur ce lien : https://www.kaggle.com/sudalairajkumar/daily-temperature-of-major-cities et qu proviennent originellement de l'université de Dayton. Après extraction des températures nous obtenons le fichier temp_north_city.xlsx avec les températures annuelles d'Oslo, de Stockholm et de Helsinki pour l'année 2018.
 
+### Résultats
+
+| Capitale      |     Moyenne     |  Ecar-type |  Aire      |  
+| ------------- |: -------------: | ---------: | ---------: |
+| Helsinki      |        1        |      1     |      1     |
+| Oslo          |        2        |      1     |      1     |
+| Stockholm     |        3        |      1     |      1     |
