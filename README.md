@@ -22,6 +22,6 @@ Au niveau des données utilisées pour comparer avec les capitales européennes 
 
 | Capitale      |     Différence de Moyenne avec SI_Error     |  Différence d'Ecart-type avec SI_Error |  Différence d'Aire avec SI_Error      |  Différence totale
 | --------------|-----------------|------------| ---------- | ---------- |
-| Helsinki      |        4.86        |      8.51     |      337     | 8.51|
-| Oslo          |        0.23        |      6.84     |      121     | 134.69|
-| Stockholm     |        22.99        |      3.85     |      940     | 947.70|
+| Helsinki      |        4.86        |      8.51     |      337     | **8.51**|
+| Oslo          |        0.23        |      6.84     |      121     | **134.69**|
+| Stockholm     |        22.99        |      3.85     |      940     | **947.70**|
