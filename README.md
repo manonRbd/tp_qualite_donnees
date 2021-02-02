@@ -103,4 +103,4 @@ Dans la partie suivante nous vous présentons les résultats pour les 4 villes q
 | Kiev          |       36.49         |     4.31  |  1069 | **1077.62**
 
 ### Conclusion
-Au vu de ces résultats, il a été conclu que le fichier SI représente probablement les températures de la capitale de la Norvège c'est à dire Oslo. 
+Au vu de ces résultats, il a été conclus que le fichier SI représente probablement les températures de la capitale de la Norvège c'est-à-dire Oslo.
