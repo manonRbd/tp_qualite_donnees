@@ -68,3 +68,5 @@ Ci-dessous le graphique des courbes mois par mois pour le fichier SI, le graphe 
 | Helsinki      |        4.86        |      8.51     |      337     | **354.03**|
 | Oslo          |        0.23        |      6.84     |      121     | **134.69**|
 | Stockholm     |        22.99        |      3.85     |      940     | **947.70**|
+
+Au vu de ces résultat, il a été conclus que le fichier SI représente les températures de la capitale de la Norvège c'est à dire Oslo. 
