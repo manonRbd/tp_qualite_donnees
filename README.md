@@ -37,7 +37,7 @@ Au niveau des données utilisées pour comparer avec les capitales européennes 
 
 
 ### Fichier de données SI erreur
-Dans le jeu de données de SI erreur des données de type chaine de caractère ont été relevées. Afin de les corriger nous réalisons une moyenne avec 5 données antérieurs et postérieurses. Ensuite nous supposions que certaines données étaient erronées avec des valeur trop haute comme 45° au mois d'août. Afin de les corriger nous avons réalisés une moyenne avec les valeurs des données antérieures et postérieures. Pour trouvées ces données éronnées, la mise en place d'un critère de recherche a été necessaire. Nous considérions que si la température du jour est supérieur à 15 de la température de la veille alors celle-ci est éronnée. Les donées corrigées sont proches des données du fichier SI. Le plus grande ecart de valeur est de 3 mais varie plus autour de 0,5 et 1,5.
+Dans le jeu de données de SI erreur des données de type chaine de caractère ont été relevées. Afin de les corriger nous réalisons une moyenne avec 5 données antérieures et postérieures. Ensuite nous supposions que certaines données étaient erronées avec des valeurs trop haute comme 45° au mois d'août. Afin de les corriger nous avons réalisés une moyenne avec les valeurs des données antérieur et postérieures.
 
 | Mois      |      Moyenne    |  Ecart-type |   Température minimal    |  Température Maximal
 | --------------|-----------------|------------| ---------- | ---------- |
@@ -55,10 +55,25 @@ Dans le jeu de données de SI erreur des données de type chaine de caractère o
 | Décembre     |        -7.129032       |      1.927726     |    -11.0     | -3.0 |
 
 ### Graphiques
-Ci-dessous le graphique des courbes mois par mois pour le fichier SI, le graphe est manipulable plus facilement à cette [adresse](https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Affichage-des-courbes-de-temp%C3%A9ratures-mensuelles)
-
-
+Ci-dessous le graphique des courbes mois par mois pour le fichier SI, le graphe est retrouvable à cette [adresse](https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Affichage-des-courbes-de-temp%C3%A9ratures-mensuelles)
 ![alt text](https://github.com/rbdManon/tp_qualite_donnees/blob/main/images/diagramme1.PNG?raw=true)
+
+Voici ensuite le graphe à l'année du fichier SI le graphe est retrouvable à cette [adresse](https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Assemblage-des-courbes-sur-une-ann%C3%A9e)
+![alt text](https://github.com/rbdManon/tp_qualite_donnees/blob/main/images/diagramme2.PNG?raw=true)
+
+
+### Comparaison avec la station Savukoski kirkonkyla
+Savukoski est une ville en Finlande d'où ont étées tirées des données de température au même format que nos fichiers SI et Si-Erreur précédents. Nous voulons comparer les deux courbes pour se rendre compte si elles sont proches. Voici le graphe de comparaison (retrouvable à cette [adresse]
+(https://nbviewer.jupyter.org/github/rbdManon/tp_qualite_donnees/blob/main/tp_Qualite_des_donnees.ipynb?flush_cache=True#Comparaison-des-donn%C3%A9es-%C3%A0-l'ann%C3%A9e-pour-le-fichier-SI-error-et-le-fichier-de-Savukoski-kirkonkyla)) :
+![alt text](https://github.com/rbdManon/tp_qualite_donnees/blob/main/images/diagramme3.PNG?raw=true)
+
+Nous pouvons voir certaines différences notables entre les deux courbes notamment en début d'année vers le mois de mars ou les courbes s'éloignent significativement. Ce n'est probablement pas dans cette ville que les mesures de température du fichier SI ont étées réalisées.
+
+### Comparaison graphique avec divers capitales du nord de l'Europe
+Comme savukoski n'est probablement pas la ville recherchée nous allons comparer les courbes de températures du fichier avec les relevés de températures de diverses autres capitales d'Europe, nous avons restreints notre choix aux métropoles nordiques car les températures peuvent atteindre la barre des -20 ce qui est assez rare dans le centre et le sud de l'europe. Nous avons donc choisis Oslo, Helsinki, Stockholm ainsi que Kiev.
+
+#### Comparaison avec Oslo
+
 
 
 ### Résultats
@@ -68,5 +83,3 @@ Ci-dessous le graphique des courbes mois par mois pour le fichier SI, le graphe 
 | Helsinki      |        4.86        |      8.51     |      337     | **354.03**|
 | Oslo          |        0.23        |      6.84     |      121     | **134.69**|
 | Stockholm     |        22.99        |      3.85     |      940     | **947.70**|
-
-Au vu de ces résultat, il a été conclus que le fichier SI représente les températures de la capitale de la Norvège c'est à dire Oslo. 
