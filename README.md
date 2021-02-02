@@ -36,7 +36,7 @@ Au niveau des données utilisées pour comparer avec les capitales européennes 
 
 
 ### Fichier de données SI erreur
-Dans le jeu de données de SI erreur des données de type chaine de caractère. Afin de les corriger nous réalisons une moyenne avec 5 données antérieurs et postérieurs. Ensuite nous suposions que certaines données étaient érronées. Afin de les corriger nous avons réaliser une moyenne avec les valeurs des données antérieur et postérieur.
+Dans le jeu de données de SI erreur des données de type chaine de caractère. Afin de les corriger nous réalisons une moyenne avec 5 données antérieurs et postérieurs. Ensuite nous suposions que certaines données étaient érronées. Afin de les corriger nous avons réaliser une moyenne avec les valeurs des données antérieur et postérieur. Le plus grand écart de valeur est de 3.
 
 | Mois      |      Moyenne    |  Ecart-type |   Température minimal    |  Température Maximal
 | --------------|-----------------|------------| ---------- | ---------- |
